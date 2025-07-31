@@ -1,0 +1,175 @@
+.cardDecoracao {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 20rem;
+  /* altura fixa mantida */
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: visible;
+  background: linear-gradient(90deg, #894208e0, #170f10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: white;
+  position: relative;
+}
+
+
+.imagemCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* garante que a imagem preencha toda a altura e largura */
+  display: block;
+
+  margin-top: -2rem;
+  transform: scaleX(-1);
+}
+
+.cardLinkConteudo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.conteudoTitulo h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: 'AndoraModernSerif', serif;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #f0d4c3;
+  margin: 0;
+}
+
+.cardHeadline {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'AndoraModernSerif', serif;
+}
+
+.botaoCard {
+  position: relative;
+  z-index: 2;
+  background-color: #f7d58c;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.botaoCard {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+
+
+
+/* Hover do botão */
+.botaoCard:hover {
+  transform: scale(1.05);
+}
+
+/* Hover elegante */
+.botaoCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(247, 213, 140, 0.5);
+}
+
+
+.chamadaAposBotao {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.heartIcon {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  /* valor negativo gira no sentido anti-horário */
+}
+
+.heartIconDecoracao {
+  transform: rotate(+8deg);
+  /* valor negativo gira no sentido anti-horário */
+}
+
+.heartIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .cardDecoracao {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+
+  .cardLinkImage {
+    width: 40%;
+    height: 180px;
+    /* REMOVA o overflow hidden */
+    position: relative;
+  }
+
+  .imagemCard {
+    width: 100%;
+    height: 115%;
+    object-fit: cover;
+    object-position: top;
+    margin-top: -30px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .cardLinkConteudo {
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  .cardLinkConteudo h2 {
+    font-size: 0.8rem;
+  }
+
+  .subtitulo {
+    font-size: 0.7rem;
+  }
+
+  .cardHeadline {
+    font-size: 1rem;
+  }
+
+  .botaoCard {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+
+  .chamadaAposBotao {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,86 @@
+.imagemCardGlam {
+    width: 100%;
+    height: auto;
+}
+
+.cardGlamLinkImage {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.cardGlamLinkImage {
+  position: relative; /* Necessário para posicionar o ::before */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardGlamLinkImage::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(247, 213, 140, 0.4) 0%, transparent 70%);
+  filter: blur(20px);
+  z-index: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.imagemCardGlam {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 1px rgba(247, 213, 140, 0.4)) drop-shadow(0 0 1px #000);
+}
+
+
+.imagemCardGlam {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+
+.cardGlamLinkConteudo {
+    background-color: #f7d58c9c;
+    padding: 0.5rem;
+    margin: 0.8rem;
+    border-radius: 10px;
+}
+
+.conteudoTituloGlam h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #241612;
+    font-family: 'AndoraModernSerif', serif;
+}
+
+.subtituloGlam {
+    font-size: 1rem;
+    color: #5c3d2c;
+    margin-top: 0.25rem;
+}
+
+.cardGlamHeadline {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    font-family: 'AndoraModernSerif', serif;
+    color: #000;
+}
+
+/* 👇 Adicionado: fontes menores no celular */
+@media (max-width: 768px) {
+    .conteudoTituloGlam h2 {
+        font-size: 1.2rem;
+    }
+
+    .subtituloGlam {
+        font-size: 0.85rem;
+    }
+
+    .cardGlamHeadline {
+        font-size: 1rem;
+    }
+}
