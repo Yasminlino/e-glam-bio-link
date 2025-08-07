@@ -1,0 +1,69 @@
+.cardMesaPosta{
+  background-color: #003d00;
+}
+
+.heartIconMesaPosta {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+
+.heartIconMesaPosta img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardLinkConteudoMesa{
+    width: 100%;
+    padding: 0.5rem;
+}.cardLinkImageMesa {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative; /* importante para posicionar filhos absolutos */
+}
+
+.brilhoCardMesa {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.8; /* ou menor se quiser mais suave */
+}
+
+.imagemCardMesa {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .imagemCardMesa {
+    width: 80%;
+  }
+
+  .brilhoCardMesa {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px){
+   .cardLinkImageMesa {
+    width: 70%;
+    margin-top: 1rem;
+  }
+}

@@ -1,47 +1,34 @@
-.imagemCardGlam {
-    width: 100%;
-    height: auto;
-}
-
 .cardGlamLinkImage {
     width: 40%;
     display: flex;
     align-items: center;
 }
+
 .cardGlamLinkImage {
-  position: relative; /* Necessário para posicionar o ::before */
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    /* Necessário para posicionar o ::before */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardGlamLinkImage::before {
-  content: '';
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(247, 213, 140, 0.4) 0%, transparent 70%);
-  filter: blur(20px);
-  z-index: 0;
-  border-radius: 50%;
-  pointer-events: none;
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(247, 213, 140, 0.4) 0%, transparent 70%);
+    filter: blur(20px);
+    z-index: 0;
+    border-radius: 50%;
+    pointer-events: none;
 }
-.imagemCardGlam {
-  width: 100%;
-  height: auto;
-  position: relative;
-  filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 1px rgba(247, 213, 140, 0.4)) drop-shadow(0 0 1px #000);
-}
-
 
 .imagemCardGlam {
-  width: 100%;
-  height: auto;
-  z-index: 1;
-  position: relative;
+    filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 1px rgba(247, 213, 140, 0.4)) drop-shadow(0 0 1px #000);
+    transform: scale(1);
 }
-
 
 .cardGlamLinkConteudo {
     background-color: #f7d58c9c;
@@ -82,5 +69,12 @@
 
     .cardGlamHeadline {
         font-size: 1rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .imagemCardGlam {
+        width: 100%;
+        height: auto;
     }
 }

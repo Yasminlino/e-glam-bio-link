@@ -1,16 +1,16 @@
 import React from "react";
-import './AgendaDecorDay.css';
+import './Livro.css';
 
-export default function AgendaDecorDay() {
+export default function Livro() {
     return (
-        <div className="cardDecoracao cardAgenda">
+        <div className="cardDecoracao cardLivro">
             <div className="cardLinkImage">
-                <img className="imagemCard" src="./assets/images/agenda.webp" alt="Foto de perfil" />
+                <img className="imagemCard" src="./assets/images/livro.png" alt="Foto de perfil" />
             </div>
             <div className="cardLinkConteudo">
                 <div className="conteudoTitulo">
                     <h2>Agenda Decor Day</h2>
-                    <p className="subtitulo">Decoração</p>
+                    <p className="subtitulo colorGray">Decoração</p>
                 </div>
                 <h3 className="cardHeadline">Agende agora sua vaga!</h3>
                 <a
@@ -22,7 +22,7 @@ export default function AgendaDecorDay() {
                     🛋️ Clique aqui para agendar!
                 </a>
 
-                <p className="chamadaAposBotao">
+                <p className="chamadaAposBotao colorGray">
                     <strong>Vagas limitadas</strong> Aproveite e se inscreva em nossa Agenda!
                 </p>
             </div>

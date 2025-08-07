@@ -3,15 +3,16 @@ import './TecidosETexturas.css';
 
 export default function TecidosETexturas() {
     return (
-        <div className="cardDecoracao">
+        <div className="cardDecoracao cardTecidos">
+            {/* <div className="sombraOverlay"></div> */}
             <div className="heartIcon">
-                <img src="./assets/images/icone-casa.png" alt="Coração decorativo" />
+                <img src="./assets/images/coracao-dourado.png" alt="Coração decorativo" />
             </div>
 
             <div className="cardLinkImage">
-                <img className="imagemCard" src="./assets/images/imagem-palestrando.png" alt="Logo Glam Cabeceiras" />
+                <img className="imageTecido" src="./assets/images/tecido.png" alt="Logo Glam Cabeceiras" />
             </div>
-            <div className="cardLinkConteudo">
+            <div className="cardLinkConteudo z-1">
                 <div className="conteudoTitulo">
                     <h2>Glam Cabeceiras</h2>
                     <p className="subtitulo">Estofados</p>

@@ -3,18 +3,18 @@ import './Decoracao.css';
 
 export default function Decoracao() {
     return (
-        <div className="cardDecoracao">
-            <div className="heartIcon heartIconDecoracao">
-                <img src="./assets/images/icone-casa.png" alt="Coração decorativo" />
+        <div className="cardDecoracao card1">
+            <div className="heartIcon">
+                <img src="./assets/images/coracao-dourado.png" alt="Coração decorativo" />
             </div>
 
             <div className="cardLinkImage">
-                <img className="imagemCard" src="./assets/images/imagem-palestrando.png" alt="Foto de perfil" />
+                <img className="imagemCard" src="./assets/images/imagem-palestrando.png" alt="Logo Glam Cabeceiras" />
             </div>
             <div className="cardLinkConteudo">
                 <div className="conteudoTitulo">
-                    <h2>Camila Decora</h2>
-                    <p className="subtitulo">Decoração</p>
+                    <h2>Glam Cabeceiras</h2>
+                    <p className="subtitulo">Estofados</p>
                 </div>
                 <h3 className="cardHeadline">Transforme sua casa com estilo</h3>
                 <a

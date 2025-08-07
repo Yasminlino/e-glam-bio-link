@@ -3,33 +3,34 @@ import './MesaPosta.css';
 
 export default function MesaPosta() {
     return (
-        <div className="cardDecoracao">
-            <div className="heartIcon">
-                <img src="./assets/images/icone-casa.png" alt="Coração decorativo" />
-            </div>
-
-            <div className="cardLinkImage">
-                <img className="imagemCard" src="./assets/images/imagem-palestrando.png" alt="Foto de perfil" />
-            </div>
-            <div className="cardLinkConteudo">
+        <div className="cardDecoracao cardMesaPosta">
+            <div className="cardLinkConteudoMesa">
                 <div className="conteudoTitulo">
                     <h2>Camila Decora</h2>
-                    <p className="subtitulo">Decoração</p>
+                    <p className="subtitulo">Mesa Posta</p>
                 </div>
-                <h3 className="cardHeadline">Transforme sua casa com estilo</h3>
+
+                <h3 className="cardHeadline">Decore sua mesa com charme</h3>
+
                 <a
-                    href="https://e-glam.com.br"
+                    href="https://e-glam.com.br/guia-mesa-posta"
                     className="botaoCard"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    🛋️ Acesse o guia de decoração
+                    📘 Comprar guia
                 </a>
 
                 <p className="chamadaAposBotao">
-                    <strong>Acesse a página</strong> exclusiva e veja tudo que preparamos para você!
+                    Guia prático com ideias para montar mesas lindas.
                 </p>
             </div>
+
+            <div className="cardLinkImageMesa">
+                <img className="imagemCardMesa" src="./assets/images/mesa-posta.png" alt="Mesa posta decorada" />
+                <img className="brilhoCardMesa" src="./assets/images/brilhos.png" alt="Brilho decorativo" />
+            </div>
+                <img className="brilhoCardMesa" src="./assets/images/brilhos.png" alt="Brilho decorativo" />
         </div>
     );
 }

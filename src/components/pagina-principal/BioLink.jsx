@@ -5,6 +5,7 @@ import AgendaDecorDay from "../cards/AgendaDecorDay/AgendaDecorDay";
 import GlamCabeceiras from "../cards/GlamCabeceiras/GlamCabeceiras";
 import MesaPosta from "../cards/MesaPosta/MesaPosta";
 import TecidosETexturas from "../cards/TecidosETexturas/TecidosETexturas";
+import Livro from "../cards/livro/livro";
 
 export default function BioLink() {
     return (
@@ -14,6 +15,7 @@ export default function BioLink() {
             <MesaPosta />
             <AgendaDecorDay />
             <GlamCabeceiras />
+            <Livro />
         </div>
     );
 }

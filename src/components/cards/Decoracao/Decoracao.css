@@ -1,48 +1,6 @@
-.cardDecoracao {
-  display: flex;
-  width: 90%;
-  max-width: 1000px;
-  height: 20rem;
-  /* altura fixa mantida */
-  margin: 2rem auto;
-  border-radius: 16px;
-  overflow: visible;
-  background: linear-gradient(90deg, #894208e0, #170f10);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  color: white;
-  position: relative;
-}
-
-
-.imagemCard {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* garante que a imagem preencha toda a altura e largura */
-  display: block;
-
-  margin-top: -2rem;
-  transform: scaleX(-1);
-}
-
-.cardLinkConteudo {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.conteudoTitulo h2 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: 'AndoraModernSerif', serif;
-}
-
-.subtitulo {
-  font-size: 1rem;
-  color: #f0d4c3;
-  margin: 0;
+.card1 {
+  background-color: #be3232;
+  color: black;
 }
 
 .cardHeadline {
@@ -52,17 +10,24 @@
 }
 
 .botaoCard {
-  position: relative;
-  z-index: 2;
   background-color: #f7d58c;
   color: #000;
   font-weight: bold;
-  padding: 12px 20px;
+  padding: 12px 16px;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
-  transition: transform 0.3s ease;
+  text-align: center;
+  width: 240px;
+  /* ✅ largura fixa */
+  max-width: 100%;
+  /* ✅ responsivo */
+  margin: 0 auto;
+  /* ✅ centraliza */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -80,9 +45,6 @@
 .botaoCard {
   animation: pulse 2s ease-in-out infinite;
 }
-
-
-
 
 /* Hover do botão */
 .botaoCard:hover {
@@ -137,7 +99,7 @@
   }
 
   .imagemCard {
-    width: 100%;
+    width: 80%;
     height: 115%;
     object-fit: cover;
     object-position: top;
@@ -171,5 +133,11 @@
   .chamadaAposBotao {
     font-size: 0.5rem;
     margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .botaoCard {
+    width: 80%;
   }
 }

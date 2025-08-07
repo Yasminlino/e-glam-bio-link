@@ -3,13 +3,13 @@ import './GlamCabeceiras.css';
 
 export default function GlamCabeceiras() {
     return (
-        <div className="cardDecoracao">
+        <div className="cardDecoracao backgroundColorBrown">
             <div className="heartIcon">
                 <img src="./assets/images/icone-whats.png" alt="Coração decorativo" />
             </div>
 
             <div className="cardGlamLinkImage">
-                <img className="imagemCardGlam" src="./assets/images/logo-glam.png" alt="Foto de perfil" />
+                <img className="imagemCard imagemCardGlam" src="./assets/images/logo-glam.png" alt="Foto de perfil" />
             </div>
             <div className="cardGlamLinkConteudo">
                 <div className="conteudoTituloGlam">
